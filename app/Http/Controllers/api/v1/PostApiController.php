@@ -13,7 +13,7 @@ class PostApiController extends Controller
      */
     public function index()
     {
-        $data = Post::paginate(25);
+        $data = Post::paginate(2);
         return response($data , 200);
     }
 
