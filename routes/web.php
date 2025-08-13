@@ -20,7 +20,7 @@ Route::get('/job', [jobController::class,'index'] );
 
 Route::resource('blog',PostController::class);
 
-Route::resource('comment',CommentController::class);
+Route::resource('comments',CommentController::class);
 
 Route::resource('tag',TagController::class);
 
