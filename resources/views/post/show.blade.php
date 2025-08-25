@@ -19,7 +19,7 @@
                 <label for="author" class="block text-gray-700 font-medium mb-1">Your Name</label>
                 <div>
                     <input type="text" id="author" name="author"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none {{$errors->has('author') ? 'outline-red-500' : 'outline-red-500'}} "
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none {{$errors->has('author') ? 'outline-red-500' : 'outline-gray-500'}} "
                         placeholder="Enter your name" value="{{old('author')}}">
                 </div>
                 @error('author')
@@ -32,7 +32,7 @@
                 <label for="content" class="block text-gray-700 font-medium mb-1">Your Comment</label>
                 <div>
                     <textarea id="content" name="content" rows="4"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none {{$errors->has('content') ? 'outline-red-500' : 'outline-red-500'}}"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none {{$errors->has('content') ? 'outline-red-500' : 'outline-gray-500'}}"
                         placeholder="Write your comment here..."></textarea>
                 </div>
                 @error('content')

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\__PostController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
@@ -24,5 +25,13 @@ Route::resource('comments',CommentController::class);
 
 Route::resource('tag',TagController::class);
 
+
+Route::get('/signup',[AuthController::class,'showSignupForm']);
+Route::get('/login',[AuthController::class,'showLoginForm']);
+
+
+Route::post('/signup',[AuthController::class,'Signup']);
+Route::post('/login',[AuthController::class,'Login']);
+Route::post('/logout',[AuthController::class,'Logout']);
 
 
